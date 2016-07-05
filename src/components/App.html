@@ -1,0 +1,6 @@
+<div>
+  <ul class="messages">
+    <li v-for="msg in messageList">{{msg}}</li>
+  </ul>
+  <div class="console"><input type="text" v-model="message" @keyup.enter="$emit('send', message)"></div>
+</div>
